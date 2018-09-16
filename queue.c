@@ -62,7 +62,7 @@ int dequeue(Queue* queue){
     return dequeued;
 }
 
-//shows the hole queue, but dequeues every element in it
+//shows the whole queue, but dequeues every element in it
 void printQueue(Queue* queue){
     printf("[QUEUE]\n");
     while (queue->head != NULL){
@@ -76,7 +76,7 @@ int main() {
     Queue queue = createQueue();
     char operation;
 
-    printf("You can use the following functions:\nI: Enqueues a new element to the list.\nR: Dequeues the top element of the list.\nP: Shows the hole queue, but dequeues every element in it. This one also quits the program.\n");
+    printf("You can use the following functions:\nI: Enqueues a new element to the list.\nR: Dequeues the top element of the list.\nP: Shows the whole queue, but dequeues every element in it. This one also quits the program.\n");
 
     while(1){
         scanf("%c", &operation);

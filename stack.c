@@ -44,7 +44,7 @@ int pop(StackNode** root){
     return popped;
 }
 
-//shows the hole stack, but pops every element in it
+//shows the whole stack, but pops every element in it
 void printStack(StackNode** root){
     printf("[STACK]\n");
     while (*root != NULL){
@@ -58,7 +58,7 @@ int main() {
     StackNode* stack = NULL;
     char operation;
 
-    printf("You can use the following functions:\nI: Pushes a new element to the list.\nR: Pops the top element of the list.\nP: Shows the hole stack, but pops every element in it. This one also quits the program.\n");
+    printf("You can use the following functions:\nI: Pushes a new element to the list.\nR: Pops the top element of the list.\nP: Shows the whole stack, but pops every element in it. This one also quits the program.\n");
 
     while(1){
         scanf("%c", &operation);
